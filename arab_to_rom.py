@@ -18,7 +18,7 @@ def conv_to_rom(arab_in):
         print('XC', end = '')
         return (arab_in - 90)   
     elif arab_in >= 50:
-        printf('L')
+        print('L')
         return (arab_in - 50)
     elif arab_in >= 40:
         print('XL', end = '')
