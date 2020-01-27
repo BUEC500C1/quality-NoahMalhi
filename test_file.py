@@ -3,5 +3,5 @@ import pytest
 
 def test_awnser():
     arab_to_rom.input = lambda: '4'
-    output = arab_to_rom.conv_to_rom(x, y)
+    x, y = arab_to_rom.conv_to_rom()
     assert y == "IV"
