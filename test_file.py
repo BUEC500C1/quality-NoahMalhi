@@ -29,4 +29,4 @@ def test_upperbound():
 def test_nonint():
     arab_to_rom.input = lambda x: "hello"
     output = arab_to_rom.function_call()
-    assert output == "-"
+    assert output == None
