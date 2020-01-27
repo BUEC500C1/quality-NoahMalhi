@@ -19,7 +19,7 @@ def test_num():
 def test_neg():
     arab_to_rom.input = lambda x: -2
     output = arab_to_rom.function_call()
-    assert output == "-"
+    assert output == ValueError
 
 def test_upperbound():
     arab_to_rom.input = lambda x: 10000
@@ -29,4 +29,4 @@ def test_upperbound():
 def test_nonint():
     arab_to_rom.input = lambda x: "hello"
     output = arab_to_rom.function_call()
-    assert output == "-"
+    assert output == ValueError
