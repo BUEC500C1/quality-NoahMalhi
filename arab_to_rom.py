@@ -1,9 +1,3 @@
-import pytest
-
-def test_awnser():
-    y = ""
-    x, y = conv_to_rom(4, y)
-    assert y == "IV"
 
 def conv_to_rom(arab_in, endconv):
 
