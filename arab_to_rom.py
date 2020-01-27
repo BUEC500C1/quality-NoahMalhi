@@ -46,7 +46,7 @@ def conv_to_rom(arab_in, endconv):
     else:
         return 0
 
-def main():
+def function_call():
     arab_in = int(input("Enter a number : "))
     endconv = ""
     try:
@@ -65,7 +65,8 @@ def main():
         print(endconv)
         print('Done')
         return endconv
-    except ValueError
+    except ValueError:
         print("Inputted number must be an integer")
         endconv = "-"
 
+function_call()
