@@ -66,7 +66,8 @@ def function_call():
         print('Done')
         return endconv
     except ValueError:
-        print("Inputted number must be an integer")
         endconv = "-"
+        print("Inputted number must be an integer")
+        
 
 #function_call()
