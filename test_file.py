@@ -1,8 +1,11 @@
 import arab_to_rom
-import sys
+import mock
+import builtins
 import pytest
 
 def test_awnser():
-    sys.stdin = 4
-    x, y = arab_to_rom.conv_to_rom()
-    assert y == "IV"
+    
+    arab_to_rom.input = lamba: '4'
+    output = arab_to_rom.main()
+
+    assert output == "IV"

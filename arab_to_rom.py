@@ -46,6 +46,7 @@ def conv_to_rom(arab_in, endconv):
     else:
         return 0
 
+def main():
 arab_in = int(input("Enter a number : "))
 endconv = ""
 for x in range(arab_in):
@@ -60,4 +61,5 @@ if arab_in < 0:
     print ("Enter value greater than 0")   
 print(endconv)
 print('Done')
+return endconv
 
