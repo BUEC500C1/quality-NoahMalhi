@@ -25,3 +25,8 @@ def test_upperbound():
     arab_to_rom.input = lambda x: 10000
     output = arab_to_rom.main()
     assert output == "-"
+
+def test_nonint():
+    arab_to_rom.input = lambda x: "hello"
+    output = arab_to_rom.main()
+    assert output == "-"
