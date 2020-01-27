@@ -47,19 +47,19 @@ def conv_to_rom(arab_in, endconv):
         return 0
 
 def main():
-arab_in = int(input("Enter a number : "))
-endconv = ""
-for x in range(arab_in):
-    if arab_in > 9999:
-        print("Entered value must be less than 10,000")
-        break
-    arab_in, endconv = conv_to_rom(arab_in, endconv)
-    if arab_in == 0 :
-        break
+    arab_in = int(input("Enter a number : "))
+    endconv = ""
+    for x in range(arab_in):
+        if arab_in > 9999:
+            print("Entered value must be less than 10,000")
+            break
+        arab_in, endconv = conv_to_rom(arab_in, endconv)
+        if arab_in == 0 :
+            break
 
-if arab_in < 0:
-    print ("Enter value greater than 0")   
-print(endconv)
-print('Done')
-return endconv
+    if arab_in < 0:
+        print ("Enter value greater than 0")   
+    print(endconv)
+    print('Done')
+    return endconv
 
