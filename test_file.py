@@ -1,6 +1,4 @@
 import arab_to_rom
-import mock
-import builtins
 import pytest
 
 def test_awnser():
