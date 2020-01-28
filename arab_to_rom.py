@@ -1,6 +1,7 @@
 
 def conv_to_rom(arab_in, endconv):
 
+    #If 
     if arab_in >= 5000:
         endconv = endconv + '(V)'
         return (arab_in - 5000), endconv
@@ -47,15 +48,19 @@ def conv_to_rom(arab_in, endconv):
         return 0
 
 def function_call():
+    #Initilization of empty string to hold final value
     endconv = ""
    
     try:
         arab_in = int(input("Enter a number : "))
+
+    #Except catches any invalid input such as a string, "FOO"
     except ValueError:
         endconv = "-"
         print(endconv)
         return
 
+    #Loop to calculate each roman numeral; Max number allowed is 9999
     for x in range(arab_in):
         if arab_in > 9999:
             print("Entered value must be less than 10,000")
@@ -64,7 +69,8 @@ def function_call():
         arab_in, endconv = conv_to_rom(arab_in, endconv)
         if arab_in == 0 :
             break
-
+        
+    #If negative give an erroneous output message
     if arab_in < 0:
         endconv = "-"
         print ("Enter value greater than 0")   
